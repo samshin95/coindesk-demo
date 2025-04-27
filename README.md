@@ -21,7 +21,6 @@
      - 說明：
        - **單元測試**：JUnit 5 + Mockito 模擬外部依賴，測工具／服務邏輯。
        - **整合測試**：`@SpringBootTest` + MockMvc / TestRestTemplate 驗證 REST API。
--
 - **試做功能清單**：  
   6. **Swagger UI (OpenAPI)**
   - 位置：引入 `springdoc-openapi-ui`，(選填) `OpenApiConfig.java`
