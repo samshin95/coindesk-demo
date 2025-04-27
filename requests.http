@@ -1,0 +1,28 @@
+### 用REST Client測試API
+
+### 列出所有幣別
+### 英文回應（預設）
+GET http://localhost:8080/currencies
+Accept-Language: en-US
+### 繁體中文回應
+GET http://localhost:8080/currencies
+Accept-Language: zh-TW
+
+
+### 取得轉換後匯率（Mock）
+### 英文回應（預設）
+GET http://localhost:8080/coindesk/transformed
+Accept-Language: en-US
+### 繁體中文回應
+GET http://localhost:8080/coindesk/transformed
+Accept-Language: zh-TW
+
+
+### 新增幣別
+POST http://localhost:8080/currencies
+Content-Type: application/json
+
+{
+  "code": "JPY",
+  "nameZh": "日圓"
+}
